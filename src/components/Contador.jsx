@@ -6,6 +6,9 @@ const Contador=()=> {
     const incrementador =()=>{
         setContador (Contador + 1 )
     }
+    const disminuirr =()=>{
+        setContador (Contador - 1 )
+    }
   return (
     <div>
         <h2>Contador</h2>
@@ -15,6 +18,7 @@ const Contador=()=> {
   
         </h4>
         <Button variant="warning" onClick={incrementador}>Aumentar</Button>
+        <Button variant="success" onClick={disminuirr}>Disminuir</Button>
 
     </div>
   )
